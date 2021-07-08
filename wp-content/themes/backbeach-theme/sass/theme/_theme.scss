@@ -1,0 +1,143 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+$primary: #223A47;
+$secondary: #f2bd57; 
+
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+
+body{
+   font-family:'Source Sans Pro', sans-serif;
+   font-size:18px;
+   line-height:1.25;	
+}
+
+#wrapper-navbar{
+
+	.top-header-holder{
+	height:150px;
+	background:#f1f1f1;
+	.navbar-toggler{
+	  border:1px solid blue;
+	  background:red;
+	}
+	.container{
+	  .logo-holder{
+	    display:block;
+	    .logo{
+
+	    }
+	  }
+	  .col-6{
+	    @media(max-width:$lg){
+	      text-align:center;
+	    }
+	  }
+	  .social-media-holder, .social-media-holder-tablet{
+	   font-size:50px;
+	   a{
+	     color:$secondary;
+	     text-decoration:none;
+	     &:hover{
+          color:darken($secondary, 15%);
+	     }	   
+	     }
+	     @media(max-width:$lg){
+	       display:none;
+	     }
+	     &.social-media-holder-tablet{
+	       display:none;
+	       @media(max-width:$lg){
+	       display:inline-block;
+	       font-size:18px;
+	     }
+	     }
+
+	  }
+
+	  .contact-holder{
+	    font-size:18px;
+	    font-weight:600;
+	    a{
+	       display:inline-block;
+	       margin-right:1em;
+	       margin-bottom:1em;
+	       @media(max-width:$lg){
+	        margin-right:0.5em;
+	        margin-bottom:0.5em;
+	     }
+	       color:$primary;
+	       .fa{
+	         color:$secondary;
+	       }
+	    }
+	    @media(max-width:$lg){
+	       font-size:16px;
+	      .address{
+	        display:none;
+	      }
+	    }
+	  }
+	  .reservation-btn{
+	    font-family:"Fredericka the Great";
+	    font-size:38px;
+	    border:1px dotted $secondary;
+	    display:inline-block;
+	    padding:0.25em 0.5em;
+	    border-radius:0.25em;
+	    transition:0.25s ease all;
+	    cursor:pointer;
+	    text-decoration:none;
+	    &:hover{
+	    background:$secondary;
+	    color:white;
+	    }
+	      @media(max-width:$lg){
+	       font-size:18px;
+	    }
+	  }
+	  .reservation-holder, .social-media-holder{
+	     padding-top:30px;
+	     padding-bottom:50px;
+	  }
+	
+	}
+	}
+	margin-bottom:-360px;
+
+    #main-nav{
+    border-top:1px solid rgba(#5DABAA, 0.5);
+    border-bottom:1px solid rgba(#5DABAA, 0.5);
+    padding:0px;
+    ul{
+      flex:1;
+      justify-content:space-between;
+      li{
+        a{
+          font-weight:600;
+          font-size:22px;
+          text-transform:uppercase;
+          padding:1.5em 0.5em;
+          @media(max-width:$xl){
+            font-size:20px;
+            padding:1em 0.3em;
+          }
+        }
+        &.current_page_item{
+         a{
+           color:$secondary;
+         }
+        }
+      }
+    }
+    }
+}
+.home-banner{
+	height:1080px;
+	background:#ccc;
+	background:url(../img/beach.jpg);
+	background-size:cover;
+}
